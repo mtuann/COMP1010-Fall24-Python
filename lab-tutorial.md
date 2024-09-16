@@ -42,6 +42,3 @@ This tutorial will guide you through submitting and evaluating your lab assignme
 * **Ask for help if you need it:** Don't hesitate to ask your TA or the instructor for assistance if you have any questions or encounter difficulties.
 
 **Good luck and happy coding!**
-
-Remember, Codeforces is a great platform for practicing your coding skills and preparing for future challenges.  Take advantage of the opportunity to learn and improve your programming skills.
-
