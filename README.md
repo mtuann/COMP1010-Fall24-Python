@@ -13,9 +13,9 @@ This repository is for the Fall 2024 COMP1010 - Introduction to Programming clas
 | Week | Topic | Lab |
 | --- | --- | --- |
 | 01 | Introduction to Programming | Lab 1: Installation & Expression Evaluation |
-| 02 | Variables, Operators, Assignments, and Statements | Lab 2: Functions & Expressions |
+| 02 | Variables, Operators, Assignments, and Statements | Lab 2: Expressions, Variable Assignments, and Logical Operators.|
 | 03 | Functions and Modules | Lab 3: Functions & Modules |
-| 04 | Strings and Testing | Lab 4: Strings and Testing |
+| 04 | Strings and Testing | Lab 4: Strings, Testing and Debugging |
 | 05 | Conditionals and Control Flow | Lab 5: Conditionals and Flow Control |
 | 06 | Objects, Lists, & Sequences | Lab 6: Lists and Objects |
 | 07 | Iteration | Lab 7: Lists, Iteration, and Loops |
@@ -32,6 +32,6 @@ This repository is for the Fall 2024 COMP1010 - Introduction to Programming clas
 
 ## Source
 - [Think Python: How to Think Like a Computer Scientist](https://www.greenteapress.com/thinkpython/thinkpython.pdf)
-- [Introduction to Computation and Programming Using Python: With Application to Understanding Data](https://mitpress.mit.edu/books/introduction-computation-and-programming-using-python-application-understanding-data)
+- [Introduction to Computation and Programming Using Python: With Application to Understanding Data](https://mitpress.mit.edu/9780262542364/introduction-to-computation-and-programming-using-python/)
 
 
