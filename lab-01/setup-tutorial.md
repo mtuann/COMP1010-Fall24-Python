@@ -1,4 +1,6 @@
-There are many ways to set up a Python development environment, but one of the most popular combinations is using Miniconda as a package manager and PyCharm as an Integrated Development Environment (IDE). This tutorial will guide you through the process of installing Miniconda, setting up PyCharm, and configuring them to work together.
+There are many ways to set up a Python development environment, but one of the most popular combinations is using Miniconda as a package manager and PyCharm as an Integrated Development Environment (IDE).
+
+This tutorial will guide you through the process of installing Miniconda, setting up PyCharm, and configuring them to work together.
 
 ## Table of Contents
 - [Step 1: Install Miniconda](#step-1-install-miniconda)
