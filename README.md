@@ -30,6 +30,10 @@ This repository is for the Fall 2024 COMP1010 - Introduction to Programming clas
 | 16 | Self-Study & Revision Class |  |
 | 17 | Final Exam Week |  |
 
+
+## Lab Assignments
+- For the lab assignments, we will be using Codeforces.  You will need to register for a Codeforces account using your VinUniversity email address.  Detailed instructions can be found [here](lab-tutorial.md).
+
 ## Source
 - [Think Python: How to Think Like a Computer Scientist](https://www.greenteapress.com/thinkpython/thinkpython.pdf)
 - [Introduction to Computation and Programming Using Python: With Application to Understanding Data](https://mitpress.mit.edu/9780262542364/introduction-to-computation-and-programming-using-python/)
