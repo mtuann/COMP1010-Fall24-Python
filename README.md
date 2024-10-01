@@ -46,5 +46,6 @@ This repository is for the Fall 2024 COMP1010 - Introduction to Programming clas
 ## Source
 - [Think Python: How to Think Like a Computer Scientist](https://www.greenteapress.com/thinkpython/thinkpython.pdf)
 - [Introduction to Computation and Programming Using Python: With Application to Understanding Data](https://mitpress.mit.edu/9780262542364/introduction-to-computation-and-programming-using-python/)
+- [Study Tips and Additional Resources](tip-n-resources.md)
 
 
