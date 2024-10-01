@@ -41,6 +41,7 @@ This repository is for the Fall 2024 COMP1010 - Introduction to Programming clas
 ## Lab Assignments
 - To set up your environment, please follow the instructions [here](lab-01/setup-tutorial.md).
 - For the lab assignments, we will be using Codeforces.  You will need to register for a Codeforces account using your VinUniversity email address.  Detailed instructions can be found [here](lab-tutorial.md).
+- For grading criteria, please refer to the [grading rubric](grading-criteria.md).
 
 ## Source
 - [Think Python: How to Think Like a Computer Scientist](https://www.greenteapress.com/thinkpython/thinkpython.pdf)
