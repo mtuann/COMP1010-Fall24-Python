@@ -26,7 +26,7 @@ This repository is for the Fall 2024 COMP1010 - Introduction to Programming clas
 | 05 | Conditionals and Control Flow | [Lab 5: Conditionals and Flow Control](lab-05/README.md) |
 | 06 | Objects, Lists, & Sequences | [Lab 6: Lists and Objects](lab-06/README.md) |
 | 07 | Iteration | [Lab 7: Lists, Iteration, and Loops](lab-07/README.md) |
-| 08 | Midterm Exam Week | Midterm Exam |
+| 08 | Midterm Exam Week | [Midterm Revision](midterm-revision.md) |
 | 09 | Tuples and Dictionaries | [Lab 8: Tuples and Dictionaries](lab-08/README.md) |
 | 10 | Algorithm Design & Sorting Algorithms | [Lab 9: Sorting Algorithms](lab-09/README.md) |
 | 11 | Recursion and Recursive Algorithms | [Lab 10: Sequential and Recursive Algorithms](lab-10/README.md) |
@@ -34,8 +34,8 @@ This repository is for the Fall 2024 COMP1010 - Introduction to Programming clas
 | 13 | Subclasses and Inheritance | [Lab 12: Object-oriented Programming](lab-12/README.md) |
 | 14 | Python Machine Learning I | [Lab 13: Python Tools for Machine Learning](lab-13/README.md) |
 | 15 | GUI Frameworks in Python | [Lab 14: GUI Frameworks in Python](lab-14/README.md) |
-| 16 | Self-Study & Revision Class |  |
-| 17 | Final Exam Week |  |
+| 16 | Self-Study & Revision Class |  [Final Revision](final-revision.md) |
+| 17 | Final Exam Week |  Good Luck! |
 
 
 ## Lab Assignments
