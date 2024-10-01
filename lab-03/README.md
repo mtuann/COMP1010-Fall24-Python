@@ -1,108 +1,197 @@
-## Lab 03 Topic: Functions and Modules
+### Lab 3: Functions & Modules
 
-### Table of Contents
-1. [Introduction to Functions](#introduction-to-functions)
-2. [Defining Functions](#defining-functions)
-3. [Function Parameters and Arguments](#function-parameters-and-arguments)
-4. [Return Statement](#return-statement)
-5. [Scope of Variables](#scope-of-variables)
-6. [Modules](#modules)
-7. [Creating Your Own Module](#creating-your-own-module)
-8. [Importing Modules](#importing-modules)
-9. [Conclusion](#conclusion)
+#### Objectives:
+- Understand the concept of functions and their importance in programming.
+- Learn how to define and call functions in Python.
+- Understand how to pass arguments to functions and return values from them.
+- Introduce the use of modules for organizing code and reusability.
+- Practice importing and using built-in and custom modules in Python.
 
 ---
 
-## Introduction to Functions
-Functions are blocks of reusable code that perform a specific task. They help in organizing code, reducing redundancy, and enhancing readability.
+### Section 1: Introduction to Functions
 
-## Defining Functions
-To define a function, use the `def` keyword followed by the function name and parentheses.
+A **function** is a block of code that performs a specific task. Functions allow us to reuse code, making programs easier to read and maintain.
+
+#### 1.1 Defining a Function
+
+We define functions using the `def` keyword. Here is a simple function that prints a greeting:
 
 ```python
+# Defining a function
 def greet():
-    print("Hello, welcome to the Python programming course!")
+    print("Hello, World!")
 ```
 
-### Example:
+#### 1.2 Calling a Function
+
+After defining a function, we can call it by using its name followed by parentheses:
+
 ```python
-greet()  # Call the function
+# Calling the greet function
+greet()
 ```
 
-## Function Parameters and Arguments
-Functions can accept parameters to perform operations with different inputs.
+---
 
-### Example:
+### Section 2: Parameters and Arguments
+
+Functions can take **parameters**, which are variables that hold the data passed to the function. These are specified in the parentheses when defining the function.
+
 ```python
+# Function with a parameter
+def greet_with_name(name):
+    print(f"Hello, {name}!")
+```
+
+#### 2.1 Example of Calling a Function with Arguments
+
+You can pass data (arguments) when calling the function:
+
+```python
+# Calling the function with an argument
+greet_with_name("Alice")
+```
+
+#### 2.2 Default Arguments
+
+You can define default values for parameters:
+
+```python
+# Function with default argument
+def greet_with_default(name="Guest"):
+    print(f"Hello, {name}!")
+```
+
+Now, you can call it with or without passing an argument:
+
+```python
+greet_with_default("Bob")  # Output: Hello, Bob!
+greet_with_default()       # Output: Hello, Guest!
+```
+
+---
+
+### Section 3: Return Values from Functions
+
+Functions can return a result using the `return` statement:
+
+```python
+# Function that returns a value
 def add(a, b):
     return a + b
+```
 
-# Calling the function with arguments
+When you call this function, you can store the returned value:
+
+```python
 result = add(5, 3)
-print("The sum is:", result)
+print(result)  # Output: 8
 ```
 
-## Return Statement
-The `return` statement is used to exit a function and return a value to the caller.
+---
 
-### Example:
+### Section 4: Scope of Variables
+
+Variables created inside a function are **local** to that function and cannot be accessed outside of it.
+
 ```python
-def square(x):
-    return x * x
+def example():
+    x = 10  # Local variable
+    print(x)
 
-print("The square of 4 is:", square(4))
+example()
+# print(x)  # This will cause an error since x is local to the example function
 ```
 
-## Scope of Variables
-Variables defined inside a function have **local scope**, meaning they cannot be accessed outside the function.
+---
 
-### Example:
-```python
-def my_function():
-    local_var = "I am local"
-    print(local_var)
+### Section 5: Modules in Python
 
-my_function()
-# print(local_var)  # This will raise an error
-```
+A **module** is a file containing Python code that can define functions, classes, and variables. Python has many built-in modules, and you can create your own.
 
-## Modules
-Modules are files containing Python code that can define functions, classes, and variables. They promote code reusability.
+#### 5.1 Importing Built-in Modules
 
-### Example:
-You can use built-in modules like `math`.
+To use functions from a module, you need to import the module first:
 
 ```python
 import math
 
-print("The value of pi is:", math.pi)
+# Using a function from the math module
+result = math.sqrt(16)
+print(result)  # Output: 4.0
 ```
 
-## Creating Your Own Module
-You can create your own module by saving functions in a `.py` file.
+#### 5.2 Importing Specific Functions from a Module
 
-### Example:
-Create a file named `my_module.py`:
+You can import only specific functions from a module:
+
 ```python
-def multiply(x, y):
-    return x * y
+from math import sqrt
+
+result = sqrt(25)
+print(result)  # Output: 5.0
 ```
 
-## Importing Modules
-You can import your module in another Python file or notebook.
+#### 5.3 Creating and Importing Custom Modules
 
-### Example:
+You can also create your own module. Save the following code in a file named `mymodule.py`:
+
 ```python
-import my_module
-
-result = my_module.multiply(4, 5)
-print("The product is:", result)
+# mymodule.py
+def greet(name):
+    return f"Hello, {name}!"
 ```
 
-## Conclusion
-Functions and modules are essential concepts in Python programming. They help in organizing code, improving readability, and enhancing functionality.
+In another Python file, import and use this module:
 
-### Practice Exercises:
-1. Write a function that calculates the factorial of a number.
-2. Create a module that contains functions for basic arithmetic operations (addition, subtraction, multiplication, and division).
-3. Import your arithmetic module and use it to perform calculations on two numbers provided by the user.
+```python
+import mymodule
+
+# Using the greet function from mymodule
+print(mymodule.greet("Charlie"))  # Output: Hello, Charlie!
+```
+
+---
+
+### Section 6: Using `if __name__ == "__main__"` in Modules
+
+When writing reusable code, it’s common to include the following construct to ensure that code runs only when the file is executed directly, not when it's imported as a module:
+
+```python
+# mymodule.py
+def greet(name):
+    return f"Hello, {name}!"
+
+if __name__ == "__main__":
+    print(greet("Direct Run"))
+```
+
+---
+
+### Section 7: Lab Exercises
+
+#### Exercise 1: Temperature Conversion Function
+- Write a function `celsius_to_fahrenheit(celsius)` that converts a temperature from Celsius to Fahrenheit.
+- Write a function `fahrenheit_to_celsius(fahrenheit)` that converts Fahrenheit to Celsius.
+
+#### Exercise 2: Custom Math Module
+- Create a module named `mymath.py` with the following functions:
+  - `add(a, b)`: Returns the sum of two numbers.
+  - `subtract(a, b)`: Returns the difference between two numbers.
+  - `multiply(a, b)`: Returns the product of two numbers.
+  - `divide(a, b)`: Returns the quotient of two numbers.
+- Import and use the functions in another script.
+
+#### Exercise 3: Simple Calculator Using Functions
+- Create a program that asks the user for two numbers and an operator (`+`, `-`, `*`, `/`).
+- Use functions to perform the desired calculation and display the result.
+
+---
+
+### Section 8: Best Practices for Functions and Modules
+
+- **Use Descriptive Names**: Choose function names that describe what they do.
+- **Keep Functions Small**: Each function should perform a single task.
+- **Use Comments and Docstrings**: Provide explanations for what your functions do, especially for more complex code.
+- **Modularize Your Code**: Break down large programs into smaller modules for better organization and reusability.
