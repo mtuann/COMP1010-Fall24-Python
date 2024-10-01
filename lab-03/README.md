@@ -1,5 +1,4 @@
-# Introduction to Programming (Python)
-## Topic: Functions and Modules
+## Lab 03 Topic: Functions and Modules
 
 ### Table of Contents
 1. [Introduction to Functions](#introduction-to-functions)
