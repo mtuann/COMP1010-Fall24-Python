@@ -288,7 +288,7 @@ Import the module named mymodule, and access the ```person``` dictionary:
 ```python
 import mymodule
 
-a = mymodule.person1["age"]
+a = mymodule.person["age"]
 print(a)
 ```
 
