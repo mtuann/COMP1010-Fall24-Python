@@ -111,7 +111,7 @@ This refers to how well the code is documented. Good comments and documentation 
 ```python
 # Documentation: Clear and helpful comments explain the code
 
-def is_even(number):
+def is_even(number: int) -> bool:
     """
     Check if a number is even.
     
