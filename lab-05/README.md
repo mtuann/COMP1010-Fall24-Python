@@ -108,7 +108,7 @@ letter is A
 `if` statement can also be checked inside other if statement. This conditional statement is called a nested if statement. This means that inner if condition will be checked only if outer if condition is true and by this, we can see multiple conditions to be satisfied.
 
 ```python
-#Syntax
+# Syntax
 if (condition1):
         # Executes when condition1 is true
         if (condition2):
@@ -143,7 +143,7 @@ Between 5 and 15
 The `if-elif` statement is shortcut of `if-else` chain. While using `if-elif` statement at the end $\texttt{else}$ block is added which is performed if none of the above `if-elif` statement is true.
 
 ```python
-#Syntax:
+# Syntax:
 if (condition):
     # statement
 elif (condition):
