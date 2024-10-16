@@ -28,17 +28,6 @@ if condition:
 
 ---
 
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
-
-![width:400px center](if-statement.jpg)
-
----
-
 ## Basic Conditional Check with if Statement
 
 In this example, an `if` statement checks if 10 is greater than 5. If true, it prints "10 greater than 5"; regardless, it then prints "Program ended" as the next statement, indicating the program flow.
@@ -68,17 +57,6 @@ if (condition):
 else:
     # Executes this block if condition is false
 ```
-
----
-
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
-
-![width:400px center](if-else.jpg)
 
 ---
 
@@ -141,17 +119,6 @@ if (condition1):
 
 ---
 
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
-
-![width:800px center](nested-if.jpg)
-
----
-
 **Example: Managing Nested Conditions for Refined Control**
 
 ```python
@@ -184,18 +151,6 @@ elif (condition):
 else:
     # statement
 ```
-
----
-
-<style>
-img[alt~="center"] {
-  display: block;
-  margin: 0 auto;
-}
-</style>
-
-![width:800px center](if-elseif-ladder.jpg)
-
 
 ---
 
