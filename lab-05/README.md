@@ -1,130 +1,223 @@
 # Lab 5: Conditionals and Flow Control
 
-## Objectives
+---
+
+# Objectives
 - Understand how to use conditional statements in Python.
 - Learn about flow control mechanisms such as `if`, `elif`, and `else`.
 - Practice writing programs that utilize conditionals.
 
 ---
 
-## 1. Introduction to Conditionals
+# Conditional statements
 
-In Python, conditional statements are used to perform different actions based on different conditions. The most common conditional statements are `if`, `elif`, and `else`.
+There are situations in real life when we need to do some specific task and based on some specific conditions, we decide what we should do next. Similarly, there comes a situation in programming where a specific task is to be performed if a specific condition is True. In such cases, conditional statements can be used. 
 
-### 1.1 Syntax of Conditional Statements
+
+---
+
+## `if` Statement in Python
+
+If the simple code of block is to be performed if the condition holds true then the `if` statement is used. Here the condition mentioned holds then the code of the block runs otherwise not.
 
 ```python
-if condition:
-    # code to execute if condition is true
-elif another_condition:
-    # code to execute if the previous conditions were false and this condition is true
-else:
-    # code to execute if none of the conditions were true
-```
-
-### Example
-```python
-x = 10
-
-if x > 0:
-    print("x is positive")
-elif x < 0:
-    print("x is negative")
-else:
-    print("x is zero")
+# Syntax
+if condition:           
+    # Statements to execute if condition is true
 ```
 
 ---
 
-## 2. Exercise 1: Simple Conditionals
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
 
-### Task
-Write a program that checks if a number is even or odd.
+![width:400px center](if-statement.jpg)
+
+---
+
+## Basic Conditional Check with if Statement
+
+In this example, an `if` statement checks if 10 is greater than 5. If true, it prints "10 greater than 5"; regardless, it then prints "Program ended" as the next statement, indicating the program flow.
 
 ```python
-# Your code here
-number = int(input("Enter a number: "))
+# if statement example
+if 10 > 5:
+    print("10 greater than 5")
 
-# Check if the number is even or odd
-if number % 2 == 0:
-    print(f"{number} is even.")
+print("Program ended")
+```
+```
+10 greater than 5
+Program ended
+```
+
+---
+
+## `if-else` Statement in Python
+
+In conditional `if` Statement the additional block of code is merged as $\texttt{else}$ statement which is performed when if condition is false.
+
+```python
+# Syntax:
+if (condition):
+    # Executes this block if condition is true
 else:
-    print(f"{number} is odd.")
+    # Executes this block if condition is false
 ```
 
 ---
 
-## 3. Nested Conditionals
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
 
-You can also nest conditionals to check multiple conditions.
+![width:400px center](if-else.jpg)
 
-### Example
+---
+
+**Example: Handling Conditional Scenarios with `if-else`**
+
+In this example, the code assigns the value 3 to variable x and uses an `if-else` statement to check if x is equal to 4. If true, it prints "Yes"; otherwise, it prints "No", demonstrating a conditional branching structure.
+
 ```python
-age = 18
-
-if age >= 18:
-    print("You are an adult.")
-    if age >= 65:
-        print("You are a senior citizen.")
+# if-else statement example
+x = 3
+if x == 4:
+    print("Yes")
 else:
-    print("You are a minor.")
+    print("No")
+```
+
+```
+No
 ```
 
 ---
 
-## 4. Exercise 2: Nested Conditionals
-
-### Task
-Write a program that determines whether a person is a child, adult, or senior based on their age.
+**Example: Nested `if-else` Chain for Multiple Conditions**
 
 ```python
-# Your code here
-age = int(input("Enter your age: "))
+# if-else chain statement
+letter = "A"
 
-if age < 18:
-    print("You are a child.")
-elif age < 65:
-    print("You are an adult.")
+if letter == "B":
+    print("letter is B")
 else:
-    print("You are a senior citizen.")
+    if letter == "C":
+        print("letter is C")
+    else:
+        if letter == "A":
+            print("letter is A")
+        else:
+            print("letter isn't A, B and C")
+```
+
+```
+letter is A
 ```
 
 ---
 
-## 5. Flow Control: `if` with Logical Operators
+## Nested `if` Statement
 
-You can use logical operators such as `and`, `or`, and `not` to combine multiple conditions.
+`if` statement can also be checked inside other if statement. This conditional statement is called a nested if statement. This means that inner if condition will be checked only if outer if condition is true and by this, we can see multiple conditions to be satisfied.
 
-### Example
 ```python
-temperature = 30
-is_raining = False
-
-if temperature > 20 and not is_raining:
-    print("It's a nice day!")
+#Syntax
+if (condition1):
+        # Executes when condition1 is true
+        if (condition2):
+            # Executes when condition2 is true
+        # if Block is end here
+    # if Block is end here
 ```
 
 ---
 
-## 6. Exercise 3: Flow Control with Logical Operators
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
 
-### Task
-Write a program that checks if a person is eligible for a discount based on their age and membership status.
+![width:800px center](nested-if.jpg)
+
+---
+
+**Example: Managing Nested Conditions for Refined Control**
 
 ```python
-# Your code here
-age = int(input("Enter your age: "))
-is_member = input("Are you a member? (yes/no): ").lower() == "yes"
+# Nested if statement example
+num = 10
 
-if age < 18 or is_member:
-    print("You are eligible for a discount.")
+if num > 5:
+    print("Bigger than 5")
+
+    if num <= 15:
+        print("Between 5 and 15")
+```
+```
+Bigger than 5
+Between 5 and 15
+```
+
+---
+
+## `if-elif` Statement in Python
+
+The `if-elif` statement is shortcut of `if-else` chain. While using `if-elif` statement at the end $\texttt{else}$ block is added which is performed if none of the above `if-elif` statement is true.
+
+```python
+#Syntax:
+if (condition):
+    # statement
+elif (condition):
+    # statement
 else:
-    print("You are not eligible for a discount.")
+    # statement
 ```
 
 ---
 
-## 7. Additional Resources
+<style>
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+</style>
 
-- [Python Official Documentation on Control Flow](https://docs.python.org/3/tutorial/controlflow.html)
-- [W3Schools Python If...Else](https://www.w3schools.com/python/python_conditions.asp)
+![width:800px center](if-elseif-ladder.jpg)
+
+
+---
+
+**Example: Sequential Evaluation with $\texttt{if-elif-else}$ Structure**
+
+```python
+# if-elif statement example
+letter = "A"
+
+if letter == "B":
+    print("letter is B")
+
+elif letter == "C":
+    print("letter is C")
+
+elif letter == "A":
+    print("letter is A")
+
+else:
+    print("letter isn't A, B or C")
+```
+
+```
+letter is A
+```
