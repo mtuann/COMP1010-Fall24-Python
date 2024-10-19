@@ -113,6 +113,7 @@ class Book:
 book1 = Book("1984", "George Orwell", 328)
 print("Book info:", book1.get_info())
 ```
+Students will learn about classes and objects in Python, including how to define a class, create instances of a class, and access attributes and methods of objects in a later lesson. This section provides a brief introduction to the concept of objects and classes in Python.
 
 #### 2.2 Attributes and Methods
 Attributes are variables that belong to an object, while methods are functions that belong to an object. You can access attributes directly or use methods to manipulate them.
@@ -183,6 +184,8 @@ print("Even numbers:", even_numbers)
 ---
 
 ### Section 5: Lab Exercises
+
+This is optional content for students to practice using lists, objects, and list comprehensions in Python.
 
 #### Exercise 1: List Operations
 1. Create a list of integers from 1 to 10.
